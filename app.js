@@ -1,3 +1,8 @@
+
+if (process.env.NODE_ENV !== 'prod') {
+    require('dotenv').load();
+}
+console.log(process.env.TEST);
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
