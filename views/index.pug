@@ -4,4 +4,11 @@ block content
   h1= title
 
     div#titles.row
-        p= res
+        p there should be words here
+        p this should be the score
+    div
+        each label in data
+            p
+                span= label.name + ", "
+                span= label.color+ ", "
+                span= label.count
